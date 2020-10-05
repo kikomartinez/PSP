@@ -33,8 +33,11 @@ public class Main {
         //System.out.println(maxNumberFromArray);
 
         //AE1-6
-        int fiveNumbersSum = app.inverse5NumbersAndSum();
-        System.out.println(fiveNumbersSum);
+        //int fiveNumbersSum = app.inverse5NumbersAndSum();
+        //System.out.println(fiveNumbersSum);
+
+        //AE1-7
+        app.calculateSalary();
 
     }
 }

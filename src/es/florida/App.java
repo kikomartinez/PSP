@@ -61,4 +61,28 @@ public class App {
 
         return Arrays.stream(fiveNumbers).sum();
     }
+
+    public void calculateSalary(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Escriba el nombre del desarrollador:");
+        String name = scanner.nextLine();
+        System.out.println("Escriba los años de experiencia como desarrollador:");
+        int yearsWorking = scanner.nextInt();
+
+        if (yearsWorking < 1){
+            System.out.println(name +  " es Desarrollador Junior L1 - 15000-18000");
+        }
+        else if (yearsWorking < 3){
+            System.out.println(name +  " es Desarrollador Junior L2 - 18000-22000");
+        }
+        else if (yearsWorking < 6){
+            System.out.println(name +  " es Desarrollador Senior L1 - 22000-28000");
+        }
+        else if (yearsWorking < 9){
+            System.out.println(name +  " es Desarrollador Senior L2 - 28000-36000");
+        }
+        else{
+            System.out.println(name +  " es Analista / Arquitecto. Salario a convenir en base a rol");
+        }
+    }
 }
