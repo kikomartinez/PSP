@@ -43,4 +43,8 @@ public class App {
         System.out.println(factorial);
     }
 
+    public int getHighestNumber (Collection<Integer> numbers){
+        int maxNumber = Collections.max(numbers);
+        return  maxNumber;
+    }
 }

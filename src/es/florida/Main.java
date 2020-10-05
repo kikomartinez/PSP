@@ -21,7 +21,16 @@ public class Main {
         //System.out.println(numberToPrint);
 
         //AE1-4
-        app.writeFactorialFrom15();
+        //app.writeFactorialFrom15();
+
+        //AE1-5
+        List<Integer> numbersList = Arrays.asList(5,1,4,10,9,3);
+        int maxNumberFromList = app.getHighestNumber(numbersList);
+        System.out.println(maxNumberFromList);
+
+        ArrayList<Integer> numbersArray = new ArrayList<>(Arrays.asList(3, 1, 9, 4, 2));
+        int maxNumberFromArray = app.getHighestNumber(numbersArray);
+        System.out.println(maxNumberFromArray);
 
     }
 }
