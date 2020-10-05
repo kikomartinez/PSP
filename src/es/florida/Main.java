@@ -24,13 +24,17 @@ public class Main {
         //app.writeFactorialFrom15();
 
         //AE1-5
-        List<Integer> numbersList = Arrays.asList(5,1,4,10,9,3);
-        int maxNumberFromList = app.getHighestNumber(numbersList);
-        System.out.println(maxNumberFromList);
+        //List<Integer> numbersList = Arrays.asList(5,1,4,10,9,3);
+        //int maxNumberFromList = app.getHighestNumber(numbersList);
+        //System.out.println(maxNumberFromList);
 
-        ArrayList<Integer> numbersArray = new ArrayList<>(Arrays.asList(3, 1, 9, 4, 2));
-        int maxNumberFromArray = app.getHighestNumber(numbersArray);
-        System.out.println(maxNumberFromArray);
+        //ArrayList<Integer> numbersArray = new ArrayList<>(Arrays.asList(3, 1, 9, 4, 2));
+        //int maxNumberFromArray = app.getHighestNumber(numbersArray);
+        //System.out.println(maxNumberFromArray);
+
+        //AE1-6
+        int fiveNumbersSum = app.inverse5NumbersAndSum();
+        System.out.println(fiveNumbersSum);
 
     }
 }

@@ -1,9 +1,6 @@
 package es.florida;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class App {
 
@@ -46,5 +43,22 @@ public class App {
     public int getHighestNumber (Collection<Integer> numbers){
         int maxNumber = Collections.max(numbers);
         return  maxNumber;
+    }
+
+    public int inverse5NumbersAndSum(){
+        Scanner scanner = new Scanner(System.in);
+        int[] fiveNumbers = new int[5];
+
+        for (int i = 0; i < 5 ; i++) {
+            System.out.println("Escriba un número: ");
+            int numberToAdd = scanner.nextInt();
+            fiveNumbers[i] = numberToAdd;
+        }
+
+        for (int i = 4; i >= 0; i--) {
+            System.out.println(fiveNumbers[i]);
+        }
+
+        return Arrays.stream(fiveNumbers).sum();
     }
 }
