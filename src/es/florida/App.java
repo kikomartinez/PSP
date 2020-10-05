@@ -85,4 +85,43 @@ public class App {
             System.out.println(name +  " es Analista / Arquitecto. Salario a convenir en base a rol");
         }
     }
+
+    public void calculatePrimeNumbers(){
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Escribe el número del extremo inferior:");
+        int lowerEnd = scanner.nextInt();
+        System.out.println("Escribe el número del extremo superior:");
+        int higherEnd = scanner.nextInt();
+
+        long startTime = System.currentTimeMillis();
+        for (int i = lowerEnd; i < higherEnd; i++) {
+            printIfPrime(i);
+        }
+        long endTime = System.currentTimeMillis();
+
+        System.out.println("La ejecución ha tardado " + (endTime - startTime) + " milisegundos");
+    }
+
+    private void printIfPrime(int numberToCheck){
+        if (checkIfPrime(numberToCheck) == true){
+            System.out.println(numberToCheck + " es primo");
+        }
+        else{
+            System.out.println(numberToCheck + " no es primo");
+        }
+    }
+
+    private boolean checkIfPrime(int numberToCheck){
+        if (numberToCheck % 2 == 0 && numberToCheck != 2){
+            return false;
+        }
+        for (int i = 3; i*i <= numberToCheck ; i+=2) {
+            if (numberToCheck % i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
 }

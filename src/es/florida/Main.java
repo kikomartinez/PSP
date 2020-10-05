@@ -37,7 +37,10 @@ public class Main {
         //System.out.println(fiveNumbersSum);
 
         //AE1-7
-        app.calculateSalary();
+        //app.calculateSalary();
+
+        //AE1-8
+        app.calculatePrimeNumbers();
 
     }
 }
