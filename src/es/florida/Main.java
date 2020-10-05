@@ -13,7 +13,11 @@ public class Main {
         //app.sayHello();
 
         //AE1-2
-        app.writeNamesFromArray();
-        app.writeNamesFromList();
+        //app.writeNamesFromArray();
+        //app.writeNamesFromList();
+
+        //AE1-3
+        int numberToPrint = app.sumPairs(6);
+        System.out.println(numberToPrint);
     }
 }

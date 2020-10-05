@@ -25,4 +25,14 @@ public class App {
         }
     }
 
+    public int sumPairs(int limitNumber){
+        int result = 0;
+        for (int i = 0; i <= limitNumber; i++) {
+            if ((i % 2) == 0){
+                result += i;
+            }
+        }
+        return result;
+    }
+
 }
