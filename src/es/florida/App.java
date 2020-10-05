@@ -35,4 +35,12 @@ public class App {
         return result;
     }
 
+    public void writeFactorialFrom15(){
+        long factorial = 1;
+        for (int i = 2; i <= 15 ; i++) {
+            factorial = factorial * i;
+        }
+        System.out.println(factorial);
+    }
+
 }

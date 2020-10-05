@@ -17,7 +17,11 @@ public class Main {
         //app.writeNamesFromList();
 
         //AE1-3
-        int numberToPrint = app.sumPairs(6);
-        System.out.println(numberToPrint);
+        //int numberToPrint = app.sumPairs(6);
+        //System.out.println(numberToPrint);
+
+        //AE1-4
+        app.writeFactorialFrom15();
+
     }
 }
